@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 1. 자신의 정보를 출력하기(변수 이용하기)
+
+        let name = prompt("이름을 입력하시오");
+
+        document.write(name+"<br>");
+
+        // 2. 짝수, 홀수 판별 
+        // 사용자가 입력한 숫자가 짝수인지 홀수인지 판별하는 프로그램을 작성하세요.
+
+        let num1 = prompt("숫자를 입력하시오.")
+        let num2 = num1%2 // 나머지는 0 또는 1
+
+        if(num2==0){
+            document.write("짝수입니다."+"<br>");
+        }else if(num2==1){
+            document.write("홀수입니다"+"<br>");
+        }
+
+        // 3. 이름, 국어, 영어, 수학 3과목이 입력될 때 총점과 평균을 출력하기
+
+        let korea = prompt("국어성적을 입력하기");
+        let english = prompt("영어성적을 입력하기");
+        let math= prompt("수학성적을 입력하기");
+
+        let sum = parseInt(korea)+parseInt(english)+parseInt(math);
+        let average = sum/3;
+
+
+        document.write( "총점은"+ sum+"점입니다."+"<br>");
+        document.write("평균은"+average+"점입니다."+"<br>");
+
+
+        // 4. 최대값 구하기 ->DDDD
+        //  사용자가 입력한 세 개의 숫자 중 가장 큰 숫자를 출력하세요.
+
+        let su1= parseInt(prompt("숫자를 입력하세요 1")) ;
+        let su2= parseInt(prompt("숫자를 입력하세요 2")) ;
+        let su3= parseInt(prompt("숫자를 입력하세요 3")) ;
+
+        let max = su1;
+
+        if (su2>max){
+
+            max = su2;
+
+        }
+
+        if (su3 > max){
+
+            max=su3;
+
+        }
+
+        document.write(max);
+
+        // 5. 5단 출력 (구구단 5단 출력하기)
+
+        for( let i=1 ; i<=9 ; i++){
+           
+            document.write("5*"+i+"="+5*i+"<br>");
+        }
+
+        // 6. 7단 출력(구구단 7단 출력하기)
+
+        for( let i=1 ; i<=9 ; i++){
+            // console.log("^^");
+            // console.log("5*9="+5*9);
+            document.write("7*"+i+"="+7*i+"<br>");
+        }
+
+        // 7. 3의 배수, 5의 배수, 3과 5의 배수 출력하기-DDDDD
+        // 1부터 100까지 숫자를 순회하며 다음 조건에 맞게 출력하세요.
+        /*
+            3의 배수: "3의배수"
+            5의 배수: "5의 배수"
+            3과 5의 공배수: "3과 5의 배수"
+            나머지 숫자: 해당 숫자
+        */ 
+
+
+        for (let i=1; i<=100;i++){
+
+            if (i%15===0){
+               document.write("3과 5의 배수");
+            }else if(i%3===0){
+                document.write("3의 배수");
+            }else if(i%5===0){
+                document.write("5의 배수")
+            }else{
+                document.write(i);
+            }
+
+        }
+
+
+
+
+        // 8. 점수에 따른 등급
+        //  사용자가 입력한 점수에 따라 다음 등급을 출력하세요
+        /*
+            90점 이상: "A"
+            80점 이상: "B"
+            70점 이상: "C"
+            60점 이상: "D"
+            60점 미만: "F"
+        */ 
+
+        let koreaScore=prompt("점수를 입력하시오."); // A,B,C,F
+
+        if(koreaScore >= 90){
+            document.write("A학점"+"<br>");
+        }else if ( koreaScore>=80){
+            document.write("B학점"+"<br>");
+        }else if(koreaScore>=70){
+            document.write("C학점"+"<br>");
+        }else if(koreaScore>=60){
+            document.write("D학점"+"<br>");
+        }else {
+            document.write("F학점"+"<br>");
+        }
+
+        // 9. 수를 입력 받아 제곱을 구하기
+
+        let num=prompt("수를 입력하세요.");
+
+
+        document.write(parseInt(num)**2+"<br>");
+
+        // 10. 숫자 두 개의 합
+        // 사용자가 입력한 두 숫자를 더한 결과를 출력하세요.
+
+        let a = prompt("숫자1");
+        let b = prompt("숫자2");
+
+        let result=parseInt(a)+parseInt(b);
+
+        document.write(a+b);
+
+        // 11. 사측연산 계산기 (if,switch문)-DDDDD
+        // 사용자가 입력한 두 숫자와 연산자(+,-,*,/)를 사용하여 결과를 출력하세요
+
+
+        let a1 = parseInt(prompt("첫 번째 숫자를 입력하세요.")) ;
+        let a2 = prompt("연산자를 입력하세요(+,-,*,/)");
+        let a3 = parseInt(prompt("두 번째 숫자를 입력하세요")) ;
+        
+        let a4;
+
+        if(a2==="+"){
+            a4=a1+a3;
+        } else if (a2==="-"){
+            a4=a1-a3;
+        } else if (a2==="*"){
+            a4=a1*a3;
+        } else if (a2==="/"){
+            a4=a1/a3;
+        }
+
+        document.write(a4);
+
+
+        // () -> 가로 안은 비교가 되는 값이 담긴 변수, case 뒤는 그 값이 어떤 기준으로 나눠졌는지
+
+
+        switch(a2){
+
+            case "+" :
+               a4=a1+a3;  
+               break;
+            case "-":
+               a4=a1-a3;  
+               break;
+            case "*":
+               a4=a1*a3;  
+               break;
+            case "/":
+               a4=a1/a3;  
+               break;
+        }
+
+
+
+
+
+        
+        // 12. 홀수만 출력-DDDD
+        // 사용자가 입력한 숫자 N까지의 숫자 중 홀수만 출력하세요.
+
+        let N= parseInt(prompt("숫자 N을 입력하세요")) ;
+
+        for( let i=1; i<=N ; i++ ){
+
+            if(i%2===1){
+                document.write(i);
+            }
+
+        }
+
+        // 13.  "stop"입력될 때까지 입력한 입력을 출력하기
+
+        while(true){ // 무한루프 =>탈출 조건을 반드시 줘야 한다 ! !
+            let name =prompt();
+            if(name=="stop") break;
+            alert(name);
+        }
+
+        // 14.   9번문제를   3번 반복하게 하시오
+
+
+
+        for(let i=1 ; i<=3 ;i++){          
+            let num=prompt("수를 입력하세요.");
+            document.write(parseInt(num)**2+"<br>");
+        }
+
+        // 3번  => 카운트 
+
+        let k=1;
+        while( k<=3){
+            alert("희연");
+            k++;
+
+        }
+
+        // 15.   9번을  음수가  입력될 때 까지 반복하기
+
+        // 16.  원주(원의 둘레 ) 구하기   : 지름을 입력받아 원주 구하기
+
+        let c = parseInt(prompt("지름을 입력하시오."));
+
+        const PI=3.14;
+
+        let c1=c*PI ;
+
+        document.write(c1+"cm");
+
+        // 17.  원의 넓이 구하기 : 지름을 입력받아 원의 넓이 구하기 
+
+
+        let r=c/2;
+
+        let c2 = (r**2)*PI;
+
+        document.write(c2+"cm");
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
