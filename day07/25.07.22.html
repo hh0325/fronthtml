@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+      alert("hi javascript") //작성
+
+       //<알림창>
+      alert("장바구니에 담겼습니다") 
+      alert("아이디를 입력하세요")
+
+      // prompt 입력
+
+     let user_name = prompt("이름을 입력하시오");  //입력창
+     alert(user_name + "환영합니다!");
+
+     if(user_name === null){
+        alert("취소 버튼을 누르셨군요");          // 위의 [alert(user_name + "환영합니다!");] 주석처리해야 바로나옴
+       } else{
+        alert("당신의 이름은" + user_name + "입니다");
+       }
+
+       //comfirm 확인
+
+       let result = confirm("정말 삭제하시겠습니까");
+        
+       alert(result);
+
+       if( result == true){
+        alert("삭제합니다");  // 확인했을때 작성 코드(true)
+       }else{
+        alert("취소 되었습니다"); // 취소했을 때 작성코드(false)
+       }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
