@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       /*
+    let input=prompt("숫자 3개 입력 ( ex) 2,53,8 )")
+    let arr=input.split(",").map(Number);
+    console.log(arr);
+    let max=0;
+    for(let i=0;i < arr.length; i++){
+        console.log(i);
+        console.log(arr[i]);
+        if(max < arr[i]){
+            max=arr[i];
+        }
+    }
+    
+    document.writeln("최대수는"+max)
+  
+   */
+
+   // 사용자가 입력한 세 개의 숫자 중 가장 큰 숫자를 출력하세요.
+
+   //입력 ; 세개의 수 a,b,c
+   //출력 : 최대값 : max
+
+   /*let a=10, b=7, c=15;
+
+   if(a>b){
+    if(a>c){
+        console.log(a);
+    }else{
+        console.log(c);
+    }
+    } else{
+        if(b>c){
+            console.log(b);
+        } else{
+            console.log(c);
+        }
+    }
+  
+*/
+//max
+
+//입력
+let a=10,b=15,c=5;
+
+//출력
+let max=a; 
+//변수의 초기화 (값의 범위에서 가장 작은값  또는 값들 중에서 첫번쨰 값)
+
+if(max < b){
+max = b;
+}
+
+if(max <c){
+    max=c;
+}
+
+
+
+alert("최대값은" + max);
+ 
+</script>
+</body>
+</html>
