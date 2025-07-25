@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function 양치질하기() {
+            document.write("치약을 짠다<br>");
+            document.write("양치질을 한다 <br>");
+            document.write("헹구기 <br>");
+
+        }
+
+        //양치질하기 : 아침 2번 점심 5번 저녁4번 헹구는 횟수를 정하고 싶다면
+
+        function 양치질하기_아침() {
+            document.write("치약을 짠다<br>");
+            document.write("양치질을 한다 <br>");
+            document.write("헹구기2 <br>");
+
+        }
+        function 양치질하기_점심() {
+            document.write("치약을 짠다<br>");
+            document.write("양치질을 한다 <br>");
+            document.write("헹구기 5 <br>");
+
+        }
+        function 양치질하기_저녁() {
+            document.write("치약을 짠다<br>");
+            document.write("양치질을 한다 <br>");
+            document.write("헹구기5 <br>");
+
+        }
+
+        양치질하기_아침();
+        양치질하기_점심();
+        양치질하기_저녁();
+
+
+        //함수
+        //입력(매개변수) : 함수와 외부와의 매개자역할을 하는 함수
+        //반환 : 함수가 내부에서 만든 결과를 주는 것
+
+
+        function 양치질하기ver2(cnt) { //cnt => 매개변수
+
+            document.write("치약을 짠다<br>");
+            document.write("양치질을 한다 <br>");
+            document.write("헹구기" + cnt+ "<br>");
+
+        }
+
+ 양치질하기ver2(2);
+ 양치질하기ver2(4);
+ 양치질하기ver2(5);
+
+ 
+
+    </script>
+</body>
+
+</html>
