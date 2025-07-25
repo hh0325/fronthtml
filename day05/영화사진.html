@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .gallery-wrap{
+            border: 1px solid black;
+            width: 900px;
+            height: 400px; 
+
+            margin:  0 auto;
+
+            position: relative;
+
+
+        }
+
+        .board{
+            width: 500px;
+            height: 400px;
+            background-image: url(https://cdn.cgv.co.kr/cgvpomsfilm/Movie/Thumbnail/Poster/000089/89676/89676_320.jpg);
+           /* background-color: aquamarine;*/
+           margin: 0 auto;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .prev{
+
+            width: 30px;
+            height: 60px;
+            background-color: rgb(255, 240, 237);
+            font-size: 20px;
+            position: absolute;
+            top: 220px;
+            left: -15px;
+
+        }
+        .next{
+            width: 30px;
+            height: 60px;
+            background-color: rgb(214, 208, 255);
+           font-size: 20px;
+            position: absolute;
+            right: -15px;
+            top: 220px;
+
+        }
+
+        .movie{
+            width: 900px;
+            height: 100px;
+            border:  1px solid black;
+            margin: 0 auto;
+
+            position: relative;
+
+        }
+        .movie1_1{
+            display: flex;
+        }
+
+ .movie h2{
+    width: 50px;
+    height: 20px;
+    font-size: 16px;
+     margin: 0 auto;
+   
+ }
+  .movie img{
+    width: 13px;
+    height: 13px;
+    margin: 0 auto;
+    
+ }
+
+ .movie p{
+    width: 250px;
+    height: 15px;
+    font-size: 14px;
+    margin-left: 390px;
+ }
+
+
+ .movie button{
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 0 auto;
+    position: absolute;
+    left:  400px;
+ }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="gallery-wrap"> 
+
+            <div class="board">
+                
+            </div>
+
+            <div class="prev"> <  </div>
+            <div class="next"> > </div>
+      </div>
+ 
+
+      <div class="movie">
+        <div class="movie1_1"> <h2> 좀비딸
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXqvAD////quwDptwDqugD9+e/89ur79OHw0Xb24rHx1IDrvyPtx1Dz2ZL+/PfrwC/y1Yb468jsxEDvzWjy2I3rvhf679f14Kfwz2/46cLuyVf57dASstJyAAABMklEQVRIibXWXZeCIBAG4PkqNYqsdGvb//8/11jAjQEPXPReGec56plxIEDsegMVMX2HCDiw1GgA4QGh4zr8CnfQV97b3b+HqvcOacLJo9glXvwPaT3Z3RILMrqLtxjleY8uJAOqHFNOV2zhEdVxti1cbtjC+aL4NBsDX3lOqPgoRJznMuX48tDS3ZnVy7z4T6EyIJHfTi4LobNfPJc5kLjQ2umdHoqVr+W6+7WHHgrN5eiXLpmJ0zw02uYGTnH+Di2t4fLwC/fs8CecZv+7sFUkPPQT9SBlePwqDoWN5Y3HduZqqHloZ7aGisd2Pmu4PDdrqLgNNRSfLR4H8XTwGecylx5VNr73UJVa3n2AUyP/26btMv37NFZz4HAc6NMgcxzUpfEoazwoG4/hxkO+7S/EL+hvDLL2iO4KAAAAAElFTkSuQmCC" alt=""></div>
+         </h2> 
+        
+        <div>
+          <p>  ?  | 예매율 11.6% | 누적 298</p> 
+        </div>
+
+        <div>
+            <button> 예매하기</button>
+        </div>
+
+      </div>
+
+
+
+
+
+
+  </div>
+
+
+</body>
+</html>
