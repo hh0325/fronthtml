@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .search-bar{
+            border: 1px solid black;
+            width:  300px;
+            height: 50px;
+            display:flex;
+
+        }
+
+        .search-btn{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+
+            background-image: url(data:image/png;base64,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);
+            background-size: cover;
+            background-position: center;}
+
+
+            
+          /*배경이미지로 채우기*/
+    .search-word{
+    width:230px;
+    margin-left:20px;
+    outlilne:none;
+    border:none;}
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="search-bar">
+    <input type="text" class="search-word">
+    <div class="search-btn"> </div>
+    </div>
+    
+</body>
+</html>
