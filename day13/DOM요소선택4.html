@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+
+function change(){
+    //alert("df");
+
+const items = document.querySelectorAll(".item"); 
+/*
+for(let i=0; i< items.length; i++){
+    const item = items[i];
+    item.style.backgroundColor = "blue";
+}
+*/ 
+
+// 반복미사용
+
+ const item1 = items[0];
+    item.style.backgroundColor = "blue";
+
+const item2 = items[1];
+    item.style.backgroundColor = "blue";
+
+}
+
+
+   function unChange(){
+           // alert("dfkdkfdf");
+        }
+
+
+</script>
+
+
+</head>
+<body>
+    <h2> querySelectorAll 로 요소 선택하기</h2>
+    <p> 주의사항: 모두선택하기 이므로 선택 대상이 한개여도 배열로 반환됨 </p>
+
+
+<div class ="item"> item  </div>
+  <div class ="item"> item  </div>  
+
+
+    <button onclick = "change()">스타일 적용</button>
+    <button onclick = "unchange()">스타일 취소</button>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

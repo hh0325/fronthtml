@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+function valid(){
+    const frm = document.forms[0];
+    const userId = frm.userId;
+    const userPw = frm.userPw;
+
+    console.log(userId.v);
+
+if(userId.v ===""){
+    alert("아이디를 입력하세요");
+    userId.focus();
+} else if(userPw.v ===""){
+    alert("비밀번호를 입력하세요");
+    userPw.focus();
+} else{
+    alert("등록");
+}
+
+
+
+
+}
+
+
+
+</script>
+
+
+
+
+</head>
+<body>
+    <form name = "frm" action="" method="get" >
+    <input type="text" name="userId">
+    <input type="text" name = "userPw">
+    <button type="button" onclick = "valid()"> 로그인</button>
+    </form>
+</body>
+</html>
