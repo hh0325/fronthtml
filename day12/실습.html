@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        //Map
+        function myMap(sa){
+            const arr = ["키티","폼푸","포차코"];
+        
+            let newArr = [];
+            for (let i=0; i<arr.length; i++){
+                let df = arr[i];
+                let newItem = sa(df);
+                newArr.push(newItem);
+            }
+            return newArr;
+        }
+        
+        let resultArr = myMap(function(df){return df + "님"});
+        console.log(resultArr);
+        */
+
+        let arr = ["키티", "폼푸", "포차코"];
+
+        let newArr = arr.map(function (char) {
+            return char + "님";
+        });
+
+        console.log(arr);
+        console.log(newArr);
+
+
+
+
+        function myMap(back) {
+            let arr = ["키티", "폼푸", "포차코"];
+            let newrr = [];
+            for (let i = 0; i < arr.length; i++) {
+                let hh = arr[i];
+                let newaa = back(hh);
+                newrr.push(newaa);
+            }
+            return newrr;
+        }
+
+        let result = myMap(function (value) {
+            return value + "님"
+        });
+
+        console.log(result);
+
+
+
+
+        /*
+        //forEach
+        function myForEach(callback){
+        
+            let 이름 = ["키티","폼푸","포차코"];
+        
+           for(let i=0; i<이름.length; i++){
+        
+            let ad = 이름[i];
+        
+            console.log(ad);
+        
+            callback(ad);
+           }
+        }
+        
+        myForEach(function(er){
+            console.log(er + "!!");
+        });
+        
+        function vv(er){
+            console.log(er + "%%%");
+        }
+        myForEach(vv);
+        
+        myForEach(function(aa){
+            alert(aa);
+        });
+        
+        
+        */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
