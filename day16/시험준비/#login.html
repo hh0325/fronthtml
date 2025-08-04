@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            height: 100px;
+            background-color: aqua;
+
+            position: relative;
+        }
+
+        nav {
+            height: 60px;
+            background-color: blue;
+            padding: 10px;
+
+            box-sizing: border-box;
+        }
+
+        section {
+            height: 600px;
+            background-color: yellow;
+        }
+
+        /**/
+        footer {
+            height: 100px;
+            background-color: aqua;
+
+            display: flex;
+        }
+
+        footer .item {
+            width: 33.3%;
+            border: 1px solid black;
+        }
+
+
+        header .title {
+
+            position: absolute;
+            top: 20px;
+            left: 30px;
+
+        }
+
+        header .search {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        nav .menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        nav .menu li {
+            padding-right: 10px;
+        }
+
+/*
+        .product-list {
+            list-style: none;
+            display: flex;
+            border: 1px solid black;
+
+            justify-content: center;
+            margin: 0;
+
+
+        }
+
+        .product-item {
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+
+        }
+
+        .product-item img {
+            width: 300px;
+            height: 200px;
+        }
+*/
+
+        /* 검색바 css*/
+
+       .search{
+            border: 1px solid black;
+            width: 210px;
+            display: flex;
+             
+        }
+
+         .search input{
+            border: none;
+            outline: none;
+         }
+
+        .btn{
+            width: 40px;
+            height: 40px;
+            background-color: blue;               
+
+        }
+
+/* 로그인영역*/
+
+.login-wrap{
+    border: 1px solid black;
+    width: 350px;
+    padding: 10px;
+margin: 0 auto ;
+
+}
+
+.login-img{
+    width: 250px;
+    height: 250px;
+    border :0.5px solid black;
+ background-image: url("https://www.google.com/search?sca_esv=9576322275790996&sxsrf=AE3TifOXVAI3QWFsTg0rpKS0NUvYwOKAZA:1754269609976&udm=2&fbs=AIIjpHyDg0Pef0CibV20xjIa-FRePvNustvBDNNXs-R2ecq3qZjaOb_qoOF5SeIXzu-OQ2cGpI0RHCQ7-LcBY5ZsB162Hi4zzAoZWfcHoadKI-S2Xm4KoYzlZS5D_IUhRRc0UO8MxqzNGT7zEhElvxVehxwT9qby2AVB9oHo-1QVmJj4b_EHorw_jxCa5b72Gw2Y8puwRvc9OSQD_a6_G6yeT-Ko2wBlX9wgyAHsRQ0Pb_Qa_tY2hiw&q=%EC%97%90%EC%9D%B4%EC%BD%98%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8&sa=X&ved=2ahUKEwimqMXH---OAxW41zQHHdO3MtMQtKgLegQIGRAB&biw=1920&bih=911&dpr=1");
+    margin: 0 auto;
+background-size: cover;
+background-position: center;
+margin-top: 10px;
+
+
+}
+
+.login-info{
+    border: 1px solid black;
+    margin:  0 auto;
+    width: 300px;
+
+}
+
+.login-info input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+   /* 바깥쪽테두리 = margin 안쪽=padding */
+   margin-top: 5px;
+
+}
+.login-info button{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+
+}
+
+
+
+    </style>
+
+<script>
+// 기능 :FORM안에 있는 아이디,비번 유효성 체크 
+//  입력(매개변수):x
+//반환:x
+function aa(){
+//alert("dgdsfgd");
+
+// 
+const frm = document.frm; 
+
+const userId = document.userId; 
+// console.log(userId);
+
+
+
+if(userId.value === ""){
+    alert("아이디 입력하세요");
+    userId.focus(); 
+}else if(userPW.value === ""){
+alert("비밀번호 입력하세요");
+ userPW.focus(); 
+}else{
+    // 아이디 입력 ok. 비밀번호 입력 ok
+    alert("로그인 성공");
+    
+}
+
+
+
+
+
+}
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <!--타이틀 이미지 -->
+        <img src="" alt="타이틀 이미지" class="title">
+
+        <!--검색바-->
+       
+        <div class="search">
+            <input type="text">
+            <div class="btn">검</div>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="menu">
+            <li>로그인</li>
+            <li>로그아웃</li>
+            <li>홈으로 </li>
+        </ul>
+    </nav>
+   <section>
+
+        <!--로그인-->
+<div class="login-wrap">
+    
+    <!--로그인 이미지-->
+    <div class="login-img"></div>
+
+     <!--로그인 정보-->
+     <form name="frm" method="get">
+    <div class="login-info">
+        <input type="text" name="userId"> 
+      <input  type="password" name="userPW">
+        <button type="button" onclick="aa()">로그인</button>
+    </div>
+</form>
+
+</div>
+
+    </section>
+    <footer>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </footer>
+
+<script> 
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

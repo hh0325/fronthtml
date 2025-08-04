@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .p-list {
+            display: flex;
+            gap: 20px;  /* 요소 간격주기    */
+           
+        }
+
+        .p-box {
+            width: 200px;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px lightgrey;
+            position: relative;
+        }
+
+        .p-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 상품이미지 겹치게 레이아웃 만들기*/
+        .p-box .p-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            background: rgba(199, 193, 193, 0.6);
+            color: #fff;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+
+            /* 겹쳐있는 레이아웃 투명도 0으로 변경해서 안보이게 하기*/
+            transition: 1s;
+        }
+
+        .p-box:hover .p-info {
+            opacity: 1;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="p-list">
+        <div class="p-box">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT5805FRP8X9H3sm-BTjbLP4liZ91B-mrMwd8XaKP7Aj-F9xWJrtyrJRf9epYTCbKhZnrgavf9SivmF-7_IxSvmJdihxlDCiTUEj0P2Kra8WMnlVviDmtqHdw"
+                alt="킨더초콜릿">
+            <div class="p-info">
+                <h3>킨더초콜릿</h3>
+                <p> 6000원</p>
+            </div>
+        </div>
+
+        <div class="p-box">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTp2wG_tlVRl46s8KJHUGEinEkCApM9B0ytr3pSIfgV9O8DOPhfmK2JNrawHH83NoXc7RcnF0yMMHosIrlgOdTPU_auZUa4EFZey__DSK_V"
+                alt="밀카초콜릿">
+            <div class="p-info">
+                <h3>밀카초콜릿<br>(오레오맛)</h3>
+                <p> 3500원</p>
+            </div>
+        </div>
+
+        <div class="p-box">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR4UF2CWZIAGrkUMvecN1kHxfg4-mBMNqRv2H09d67_9LKABXZp3bzC_RQKUljzqSt-edI1PmKburlt4ZwgbY7zYuNDMlXjQIfZiZu02PI9GX_y5RdSIwmP"
+                alt="M&m">
+            <div class="p-info">
+                <h3>m&m</h3>
+                <p> 4000원</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
